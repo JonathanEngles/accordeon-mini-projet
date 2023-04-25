@@ -1,0 +1,50 @@
+html {
+    font-size: 62.5%; /*pour que 1 rem = 10 px */
+}
+
+body {
+    font-size: 1.4rem;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    color: white
+    
+}
+.accordeon {
+    width: 90%;
+    margin: auto;
+    
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid #777;
+    background-color: #0cc0df;
+    transition: background-color 0.3s;
+}
+
+.question:hover {
+background-color: #cb6ce6 ;
+}
+
+.reponse {
+    color: #777;
+    background-color: #eee;
+    padding: 3rem;
+    display: none;
+}
+
+.reponse.visible {
+    display: block;
+}
+
+.fa-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+.fa-chevron-down.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
